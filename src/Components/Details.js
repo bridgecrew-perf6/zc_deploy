@@ -65,7 +65,7 @@ class Details extends React.Component {
 
         axios({
             method: 'GET',                                                      
-            url: `https://powerful-oasis-00410.herokuapp.com/restaurant/${restaurant}`,
+            url: `https://desolate-lake-93989.herokuapp.com/restaurant/${restaurant}`,
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
@@ -98,7 +98,7 @@ class Details extends React.Component {
 
         axios({
             method: 'GET',
-            url: `https://powerful-oasis-00410.herokuapp.com/menuitems/${resId}`,
+            url: `https://desolate-lake-93989.herokuapp.com/menuitems/${resId}`,
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
@@ -221,7 +221,7 @@ class Details extends React.Component {
     }
 
     getData = (data) => {
-        return fetch(`https://powerful-oasis-00410.herokuapp.com/payment`, {
+        return fetch(`https://desolate-lake-93989.herokuapp.com/payment`, {
             method: "POST",
             headers: {
                 Accept: "application/json",
@@ -250,7 +250,7 @@ class Details extends React.Component {
         axios({
 
             method: 'POST',
-            url: 'https://powerful-oasis-00410.herokuapp.com/order',
+            url: 'https://desolate-lake-93989.herokuapp.com/order',
             headers: { 'Content-Type': 'application/json' },
             data: OrderObj
         })
