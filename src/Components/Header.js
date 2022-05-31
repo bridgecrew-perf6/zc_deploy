@@ -87,7 +87,7 @@ class Header extends React.Component {
         axios({
 
             method: 'POST',
-            url: 'http://desolate-lake-93989.herokuapp.com/signup',
+            url: 'https://desolate-lake-93989.herokuapp.com/signup',
             headers: { 'Content-Type': 'application/json' },
             data: signupObj
         })
@@ -109,7 +109,7 @@ class Header extends React.Component {
         axios({
 
             method: 'POST',
-            url: 'http://desolate-lake-93989.herokuapp.com/login',
+            url: 'https://desolate-lake-93989.herokuapp.com/login',
             headers: { 'Content-Type': 'application/json' },
             data: AuthObj
         }).then(response=>{
@@ -161,7 +161,7 @@ class Header extends React.Component {
         
         axios({
             method: 'GET',
-            url: `http://desolate-lake-93989.herokuapp.com/orders/${userId}`,
+            url: `https://desolate-lake-93989.herokuapp.com/orders/${userId}`,
             headers: { 'Content-Type': 'application/json' }
         })
         .then(response => {
